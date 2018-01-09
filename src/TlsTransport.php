@@ -11,10 +11,7 @@
 namespace Darneta\GelfPhpTls;
 
 use Gelf\Transport\TcpTransport;
-<<<<<<< HEAD
 use Gelf\Transport\SslOptions;
-=======
->>>>>>> refs/remotes/origin/master
 
 class TlsTransport extends TcpTransport
 {
