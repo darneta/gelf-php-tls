@@ -12,6 +12,7 @@ namespace Darneta\GelfPhpTls;
 
 use Gelf\Transport\TcpTransport;
 use Gelf\Transport\SslOptions;
+use Gelf\Transport\StreamSocketClient;
 
 class TlsTransport extends TcpTransport
 {
