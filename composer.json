@@ -1,5 +1,5 @@
 {
-    "name": "darenta/gelf-php-tls",
+    "name": "darneta/gelf-php-tls",
     "description": "TLS transport for gelf-php",
     "type": "library",
     "require": {
