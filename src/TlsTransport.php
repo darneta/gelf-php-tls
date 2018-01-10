@@ -20,7 +20,7 @@ class TlsTransport extends TcpTransport
     {
         parent::__construct($host, $port);
 
-        $context = $sslOptions ? $sslOptions->toStreamContext() : array();
+        $context = $sslOptions ? $sslOptions->toStreamContext() : [];
         $this->socketClient = new StreamSocketClient('tls', $host, $port, $context);
     }
 }
