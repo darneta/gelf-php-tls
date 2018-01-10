@@ -30,6 +30,11 @@ class TlsOptions extends SslOptions
     protected $localCertPassPhrase;
 
     /**
+     * @var bool
+     */
+    protected $verifyPeerName = true;
+
+    /**
      * @return string
      */
     public function getLocalCert()
@@ -78,6 +83,22 @@ class TlsOptions extends SslOptions
     }
 
     /**
+     * @return bool
+     */
+    public function isVerifyPeerName()
+    {
+        return $this->verifyPeerName;
+    }
+
+    /**
+     * @param bool $verifyPeerName
+     */
+    public function setVerifyPeerName($verifyPeerName)
+    {
+        $this->verifyPeerName = $verifyPeerName;
+    }
+
+    /**
      * @inheritdoc
      */
     public function toStreamContext($serverName = null)
@@ -97,6 +118,10 @@ class TlsOptions extends SslOptions
 
             if ($this->localCertPassPhrase) {
                 $context['ssl']['passphrase'] = $this->localCertPassPhrase;
+            }
+
+            if (!$this->verifyPeerName) {
+                $context['ssl']['verify_peer_name'] = false;
             }
         }
 
