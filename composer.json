@@ -1,19 +1,20 @@
 {
-    "name": "darneta/gelf-php-tls",
-    "description": "TLS transport for gelf-php",
-    "type": "library",
-    "require": {
-        "graylog2/gelf-php": "^1.4.1"
-    },
-	"autoload": {
-    	"psr-4": { "Darneta\\GelfPhpTls\\": "src" }
-	},
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Darius Krištapavičius",
-            "email": "darius@darneta.lt"
-        }
-    ]
+  "name": "darneta/gelf-php-tls",
+  "description": "TLS transport for gelf-php",
+  "type": "library",
+  "require": {
+    "graylog2/gelf-php": "^1.4.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "Darneta\\GelfPhpTls\\": "src"
+    }
+  },
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Darius Krištapavičius",
+      "email": "darius@darneta.lt"
+    }
+  ]
 }
-
