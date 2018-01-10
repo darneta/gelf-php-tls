@@ -12,7 +12,7 @@ namespace Darneta\GelfPhpTls;
 
 use Gelf\Transport\SslOptions;
 
-class TcpOptions extends SslOptions
+class TlsOptions extends SslOptions
 {
     /**
      * @var string
